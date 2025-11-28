@@ -1,15 +1,136 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>HTML Assignment 3</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table.middle {
+            width: 90%;
+            margin: 20px auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-spacing: 1px;
+        }
+
+        table.middle td,
+        table.middle th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        /* alignment classes */
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* color classes */
+        .green {
+            background-color: green;
+            height: 40px;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 40px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- ================= TABLE 1 ================= -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+
+        <tr>
+            <td class="">left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+
+    <!-- ================= TABLE 2 ================= -->
+    <table id="table-2" class="middle">
+        <!-- Row 1 single cell -->
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- Row 6 -->
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <!-- ================= TABLE 3 ================= -->
+    <table id="table-3" class="middle">
+
+        <!-- top green row -->
+        <tr class="green">
+            <td colspan="3"></td>
+        </tr>
+
+        <!-- middle row with image -->
+        <tr>
+            <td></td>
+
+            <td id="t-image">
+                <img src="https://i.imgur.com/3KXQy6S.jpeg"
+                     alt="Basketball"
+                     width="350">
+            </td>
+
+            <td></td>
+        </tr>
+
+        <!-- bottom blue row -->
+        <tr class="blue">
+            <td colspan="3"></td>
+        </tr>
+
+    </table>
 
 </body>
 
